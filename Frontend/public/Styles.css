@@ -184,6 +184,7 @@ z-index:999;
 .cart.open{
 bottom:0;
 }
+}
 
 /* ============================================
    UTILITY CLASSES
@@ -219,4 +220,113 @@ bottom:0;
 
 .shadow {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+   /* ============================================
+   AUTH PAGES (LOGIN / SIGNUP)
+   ============================================ */
+
+.auth-box{
+width:320px;
+margin:120px auto;
+padding:25px;
+background:#fff;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.auth-box h2{
+margin-bottom:15px;
+color:#fc8019;
+}
+
+.auth-box input{
+width:100%;
+padding:10px;
+margin:10px 0;
+border-radius:8px;
+border:1px solid #ffd0a6;
+}
+
+.auth-box button{
+background:#fc8019;
+color:#fff;
+border:none;
+padding:10px;
+width:100%;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.auth-box button:hover{
+background:#e56f12;
+}
+
+
+/* ============================================
+   RECEIPT PAGE
+   ============================================ */
+
+.receipt-card{
+width:500px;
+margin:60px auto;
+background:#fff;
+padding:25px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+.receipt-card h2{
+color:#fc8019;
+margin-bottom:15px;
+}
+
+.addon-container{
+display:flex;
+align-items:center;
+gap:10px;
+margin-top:15px;
+}
+
+.addon-slider{
+display:flex;
+overflow-x:auto;
+gap:10px;
+padding:10px;
+scroll-behavior:smooth;
+}
+
+/* Hide scrollbar */
+.addon-slider::-webkit-scrollbar{
+display:none;
+}
+
+.addon-card{
+min-width:120px;
+background:#fff4e6;
+padding:10px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+font-size:14px;
+}
+.nav-right{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.nav-right button{
+background:#fff;
+color:#fc8019;
+border:none;
+padding:6px 12px;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.nav-right button:hover{
+background:#ffe8cc;
 }
