@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Receipt</title>
 <link rel="stylesheet" href="../src/Styles/Styles.css">
 </head>
@@ -33,12 +35,18 @@
 
 </div>
 
+<button onclick="location.href='index.html'" class="place-btn">
+Back to Menu
+</button>
+
 </div>
 
 <script>
 
+let order = localStorage.getItem("lastOrder");
+
 document.getElementById("orderDetails").innerText =
-localStorage.getItem("lastOrder");
+order ? order : "No recent order found.";
 
 function scrollLeft(){
 document.querySelector(".addon-slider")
