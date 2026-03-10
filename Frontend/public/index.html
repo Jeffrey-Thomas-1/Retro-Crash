@@ -120,13 +120,17 @@ function renderFoods() {
     let finalPrice = Math.floor(food.price - (food.price * food.discount / 100));
     grid.innerHTML += `
       <div class="card">
-        <div class="discount">${food.discount}% OFF</div>
+        ${food.discount ? `<div class="discount">${food.discount}% OFF</div>` : ""}
         <h4>${food.name}</h4>
         <div class="old-price">₹${food.price}</div>
         <div class="new-price">₹${finalPrice}</div>
         <button class="add-btn" onclick="addToCart(${food.id})">Add</button>
       </div>`;
   });
+
+  if(grid.innerHTML === ""){
+    grid.innerHTML = "<p style='padding:20px'>No food found</p>";
+  }
 }
 
 function addToCart(id) {
